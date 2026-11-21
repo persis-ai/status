@@ -1,0 +1,28 @@
+/* «Τι νέο» — ό,τι το σχέδιο γράφει ΕΚΤΟΣ inline στυλ (γρ. 21 · style-hover/active/focus-visible γρ. 146 · 279)
+   + η εναλλαγή 1440 ↔ 390 (❓Τ5: η διάταξη web όταν χωρά το --content-w 980 + 2×32). Όλα τα άλλα στυλ είναι inline στο ti-neo.js,
+   αυτούσια από το σχέδιο. */
+*{box-sizing:border-box}
+html,body{margin:0}
+body{-webkit-font-smoothing:antialiased;background:var(--bg)}
+a{color:var(--accent-ink);text-decoration-color:var(--accent-line);text-underline-offset:2px}
+a:hover{color:var(--accent-2)}
+button{font:inherit}
+h1,h2,h3,p,ul{margin:0}
+
+.tn-root{color:var(--ink);font:var(--fw-body) var(--text-base)/var(--lh-body) var(--font-body);min-height:100vh}
+.tn-fallback{padding:48px 16px;text-align:center;color:var(--ink-3)}
+
+/* σχέδιο γρ. 146 · 279: style-hover / style-active / style-focus-visible της γραμμής διορθώσεων */
+.tn-fixbtn:hover{background:var(--panel-3)!important}
+.tn-fixbtn:active{transform:translateY(.5px)}
+.tn-web .tn-fixbtn:focus-visible{outline:none;box-shadow:0 0 0 3px var(--accent-wash)}
+.tn-m .tn-fixbtn:focus-visible{outline:none;box-shadow:inset 0 0 0 3px var(--accent-wash)}
+.tn-mfilter::-webkit-scrollbar{display:none}
+
+/* 1440 ↔ 390 */
+.tn-web{display:none}
+.tn-m{display:block}
+@media (min-width:1044px){
+  .tn-web{display:block}
+  .tn-m{display:none}
+}

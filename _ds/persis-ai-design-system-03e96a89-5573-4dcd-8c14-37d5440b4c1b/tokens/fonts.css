@@ -1,0 +1,25 @@
+/* Persis.ai · Webfonts — SIL OFL 1.1 (see assets/fonts/OFL-NOTICE.txt).
+   Source Serif 4 → display · Manrope → body/UI (full Greek) · JetBrains Mono → labels.
+   Paths are relative to this file (tokens/fonts.css).
+
+   Greek note: the web app's v3 Latin body face (Hanken Grotesk) ships NO Greek glyphs, so the
+   product falls back to system-ui (web) / Manrope (mobile). This system uses **Manrope**
+   as the body face so all-Greek copy renders in-brand.
+
+   SELF-HOSTED (TTFs supplied): Source Serif 4 400/600 · Manrope 400/600 · JetBrains Mono 400.
+   FALLBACK (same three families, Google Fonts): the cuts the original fonts.css declares but whose
+   TTFs were not supplied — Source Serif 4 500 + italic 400/500/600 · Manrope 300/500/700 ·
+   JetBrains Mono 500/600. When those TTFs land in assets/fonts/, delete the @import below and
+   add their @font-face rules; the system is then fully offline again. */
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600&family=Manrope:wght@300;500;700&family=Source+Serif+4:ital,wght@0,500;1,400;1,500;1,600&display=swap");
+
+/* ── Source Serif 4 (display) ── */
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:400;font-display:swap;src:url("../assets/fonts/SourceSerif4-Regular.ttf") format("truetype")}
+@font-face{font-family:"Source Serif 4";font-style:normal;font-weight:600;font-display:swap;src:url("../assets/fonts/SourceSerif4-SemiBold.ttf") format("truetype")}
+
+/* ── Manrope (body / UI — full Greek) ── */
+@font-face{font-family:"Manrope";font-style:normal;font-weight:400;font-display:swap;src:url("../assets/fonts/Manrope-Regular.ttf") format("truetype")}
+@font-face{font-family:"Manrope";font-style:normal;font-weight:600;font-display:swap;src:url("../assets/fonts/Manrope-SemiBold.ttf") format("truetype")}
+
+/* ── JetBrains Mono (labels / dates / codes) ── */
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400;font-display:swap;src:url("../assets/fonts/JetBrainsMono-Regular.ttf") format("truetype")}

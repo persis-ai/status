@@ -1,0 +1,88 @@
+{
+ "schema": 1,
+ "checked_at": "2026-11-21T12:06:42.490Z",
+ "slow_ms": 3000,
+ "services": [
+  {
+   "id": "app",
+   "name": "Εφαρμογή",
+   "group": "persis",
+   "state": "ok",
+   "http": 200,
+   "ms": 600,
+   "error": null
+  },
+  {
+   "id": "assistant",
+   "name": "Βοηθός",
+   "group": "persis",
+   "state": "ok",
+   "http": 200,
+   "ms": 269,
+   "error": null
+  },
+  {
+   "id": "pdf",
+   "name": "Έγγραφα/PDF",
+   "group": "persis",
+   "state": "ok",
+   "http": 200,
+   "ms": 265,
+   "error": null
+  },
+  {
+   "id": "addon",
+   "name": "Πρόσθετο ΤΕΕ (σύνδεση)",
+   "group": "persis",
+   "state": "ok",
+   "http": 401,
+   "ms": 268,
+   "error": null
+  },
+  {
+   "id": "tee-authaireta",
+   "name": "ΤΕΕ Αυθαίρετα",
+   "group": "external",
+   "state": "ok",
+   "http": 301,
+   "ms": 1602,
+   "error": null
+  },
+  {
+   "id": "tee-htk",
+   "name": "ΤΕΕ Ηλεκτρονική Ταυτότητα Κτιρίου",
+   "group": "external",
+   "state": "ok",
+   "http": 302,
+   "ms": 1320,
+   "error": null
+  },
+  {
+   "id": "tee-eadeies",
+   "name": "ΤΕΕ e-Άδειες",
+   "group": "external",
+   "state": "ok",
+   "http": 302,
+   "ms": 1615,
+   "error": null
+  },
+  {
+   "id": "ktimatologio",
+   "name": "Κτηματολόγιο",
+   "group": "external",
+   "state": "ok",
+   "http": 200,
+   "ms": 1253,
+   "error": null
+  },
+  {
+   "id": "et-gr",
+   "name": "Εθνικό Τυπογραφείο (ΦΕΚ)",
+   "group": "external",
+   "state": "ok",
+   "http": 200,
+   "ms": 2914,
+   "error": null
+  }
+ ]
+}

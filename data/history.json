@@ -1,0 +1,384 @@
+{
+ "schema": 1,
+ "updated_at": "2026-11-21T12:06:42.490Z",
+ "days": {
+  "app": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 2,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ],
+  "assistant": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 0,
+    "slow": 0,
+    "down": 2,
+    "worst": "down"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ],
+  "pdf": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 2,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ],
+  "addon": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 2,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ],
+  "tee-authaireta": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 1,
+    "slow": 0,
+    "down": 1,
+    "worst": "down"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ],
+  "tee-htk": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 2,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ],
+  "tee-eadeies": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 2,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ],
+  "ktimatologio": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 2,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ],
+  "et-gr": [
+   {
+    "date": "2026-11-17",
+    "checks": 2,
+    "ok": 2,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-18",
+    "checks": 13,
+    "ok": 13,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-19",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   },
+   {
+    "date": "2026-11-20",
+    "checks": 3,
+    "ok": 1,
+    "slow": 2,
+    "down": 0,
+    "worst": "slow"
+   },
+   {
+    "date": "2026-11-21",
+    "checks": 3,
+    "ok": 3,
+    "slow": 0,
+    "down": 0,
+    "worst": "ok"
+   }
+  ]
+ }
+}
