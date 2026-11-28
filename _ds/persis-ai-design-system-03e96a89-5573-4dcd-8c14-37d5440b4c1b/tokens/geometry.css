@@ -1,0 +1,43 @@
+/* Persis.ai · Geometry — radii, spacing, motion, layout dims.
+   Radii are Linear-ish tight (5–16px). Motion: one shared ease, quick + quiet;
+   fades and small translate/scale only — no bounce, no spring, no long durations. */
+
+:root{
+  /* corner radii */
+  --r-xs:5px;
+  --r-sm:7px;
+  --r-md:9px;
+  --r-lg:12px;
+  --r-xl:16px;
+  --r-pill:999px;
+
+  /* legacy aliases kept for content that reads --radius* */
+  --radius:var(--r-sm);
+  --radius-md:var(--r-md);
+  --radius-lg:var(--r-lg);
+  --radius-xl:var(--r-xl);
+
+  /* spacing scale (4px base) */
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-8:32px;
+  --space-10:40px;
+  --space-12:48px;
+
+  /* motion */
+  --ease:cubic-bezier(.2,.6,.25,1); /* @kind other */
+  --dur-fast:.14s; /* @kind other */
+  --dur:.16s; /* @kind other */
+  --dur-slow:.24s; /* @kind other */
+
+  /* layout */
+  --rail-w:56px;
+  --rail-w-open:232px;
+  --topbar-h:52px;
+  --reading-w:840px;
+  --content-w:980px;
+}

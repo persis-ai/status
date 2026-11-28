@@ -1,0 +1,42 @@
+{
+ "schema": 1,
+ "updated_at": "2026-11-28T12:21:45.396Z",
+ "events": [
+  {
+   "id": "tee-authaireta",
+   "name": "ΤΕΕ Αυθαίρετα",
+   "group": "external",
+   "from": "down",
+   "to": "ok",
+   "at": "2026-11-17T21:22:44.531Z",
+   "http": 301
+  },
+  {
+   "id": "assistant",
+   "name": "Βοηθός",
+   "group": "persis",
+   "from": "down",
+   "to": "ok",
+   "at": "2026-11-17T22:04:58.581Z",
+   "http": 200
+  },
+  {
+   "id": "et-gr",
+   "name": "Εθνικό Τυπογραφείο (ΦΕΚ)",
+   "group": "external",
+   "from": "ok",
+   "to": "slow",
+   "at": "2026-11-20T01:16:46.385Z",
+   "http": 200
+  },
+  {
+   "id": "et-gr",
+   "name": "Εθνικό Τυπογραφείο (ΦΕΚ)",
+   "group": "external",
+   "from": "slow",
+   "to": "ok",
+   "at": "2026-11-20T17:25:39.836Z",
+   "http": 200
+  }
+ ]
+}

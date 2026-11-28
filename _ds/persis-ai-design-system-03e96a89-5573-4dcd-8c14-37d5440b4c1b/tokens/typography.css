@@ -1,0 +1,44 @@
+/* Persis.ai · Typography tokens
+   Source Serif 4 → display, titles, numbers, key figures (the editorial voice).
+   Hanken Grotesk → body & UI (the working text).
+   JetBrains Mono → labels, dates, codes, IDs — ALWAYS all-caps + tracked.
+   Type scale is compact/Linear-grade; the serif does the expressive work. */
+
+:root{
+  --font-display:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --font-serif:"Source Serif 4",Georgia,serif;
+  --font-body:"Manrope","Hanken Grotesk",-apple-system,system-ui,sans-serif;
+  --font-sans:"Manrope","Hanken Grotesk",-apple-system,system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,"SF Mono",Menlo,monospace;
+
+  /* weights */
+  --fw-body:450; /* @kind other */
+  --fw-medium:500; /* @kind other */
+  --fw-semibold:600; /* @kind other */
+
+  /* size scale (px) */
+  --text-xs:11px;
+  --text-sm:12.5px;
+  --text-base:14px;
+  --text-md:15px;
+  --text-lg:17px;
+  --text-xl:19px;
+  --text-2xl:23px;
+  --text-3xl:26px;
+  --text-4xl:32px;
+  --text-display:44px;
+
+  /* mono label tracking (all-caps) */
+  --track-label:.14em; /* @kind other */
+  --track-eyebrow:.16em; /* @kind other */
+
+  --lh-tight:1.15; /* @kind other */
+  --lh-snug:1.4; /* @kind other */
+  --lh-body:1.55; /* @kind other */
+}
+
+/* ── type helpers (mirror the app's utility classes) ── */
+.ds-mono{ font-family:var(--font-mono); font-feature-settings:"tnum","lnum"; }
+.ds-serif{ font-family:var(--font-serif); }
+.ds-eyebrow{ font-family:var(--font-mono); font-size:var(--text-xs); letter-spacing:var(--track-eyebrow); text-transform:uppercase; color:var(--ink-4); font-weight:500; }
+.ds-sectlabel{ font-family:var(--font-mono); font-size:10.5px; letter-spacing:var(--track-label); text-transform:uppercase; color:var(--ink-3); font-weight:500; }

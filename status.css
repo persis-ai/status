@@ -1,0 +1,23 @@
+/* status.persis.ai — ό,τι το σχέδιο γράφει ΕΚΤΟΣ inline στυλ (γρ. 20–24 · style-hover των κουτακιών γρ. 106 · 340) + η εναλλαγή
+   1440 ↔ 390 (ίδιο όριο με το «Τι νέο»: η διάταξη 1440 όταν χωρά το --content-w 980 + 2×32). Όλα τα άλλα στυλ είναι inline στο
+   status.js, αυτούσια από το σχέδιο. */
+/* ΚΑΝΕΝΑ καθολικό box-sizing: το σχέδιο δεν το ορίζει (γρ. 20–24) — με border-box η κεφαλίδα κάρτας (min-height 48 + padding) έβγαινε 48 αντί για 69 (στιγμιότυπα δίπλα-δίπλα 17/11). */
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:var(--fw-body) var(--text-base)/var(--lh-body) var(--font-body);-webkit-font-smoothing:antialiased}
+a{color:var(--accent-ink);text-decoration-color:var(--accent-line);text-underline-offset:3px}
+a:hover{color:var(--accent-2)}
+button{font:inherit}
+
+.st-root{min-height:100vh}
+.st-fallback{padding:48px 16px;text-align:center;color:var(--ink-3)}
+
+/* σχέδιο γρ. 106 · 340: style-hover="outline:1.5px solid var(--ink);outline-offset:.5px" σε κάθε κουτάκι ημέρας */
+.st-day:hover{outline:1.5px solid var(--ink);outline-offset:.5px}
+
+/* 1440 ↔ 390 */
+.st-web{display:none}
+.st-m{display:block}
+@media (min-width:1044px){
+  .st-web{display:block}
+  .st-m{display:none}
+}

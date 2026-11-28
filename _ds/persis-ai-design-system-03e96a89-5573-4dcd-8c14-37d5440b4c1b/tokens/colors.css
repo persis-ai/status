@@ -1,0 +1,93 @@
+/* Persis.ai · Colour tokens — theme-split (light + dark), evergreen identity.
+   Source of truth: persis-shell-v4.css / hifi-case.css canonical block.
+   Raw ramps live here per theme; semantic aliases live in semantic.css.
+   Light is also bound to :root so a card with no data-theme still resolves.
+
+   Palette philosophy: ONE accent (deep evergreen), monochromatic — everything
+   else is warm ink/gray. Semantic colours (coral/amber/green/info) appear ONLY
+   as meaning, always as *-wash fills behind color-mix hairline *-line borders.
+   Canvas is a warm off-white (light) / warm near-black (dark), never pure. */
+
+:root,
+html[data-theme="light"],
+body[data-theme="light"]{
+  color-scheme:light;
+
+  /* ── surfaces (warm off-white canvas → white panels) ── */
+  --bg:#f7f6f2;
+  --panel:#ffffff;
+  --panel-2:#fbfaf7;
+  --panel-3:#f2f1ec;
+  --inset:#f4f3ef;
+
+  /* ── ink ramp (warm near-black → faint) ── */
+  --ink:#1a1a17;
+  --ink-2:#3c3b36;
+  --ink-3:#6b6a62;
+  --ink-4:#9a988e;
+
+  /* ── hairlines (low-opacity, never heavy borders) ── */
+  --line:oklch(22% 0.01 95 / 0.10);
+  --line-2:oklch(22% 0.01 95 / 0.06);
+  --line-strong:oklch(22% 0.01 95 / 0.18);
+
+  /* ── accent · deep evergreen (the ONLY brand hue) ── */
+  --accent:oklch(48% 0.075 155);
+  --accent-2:oklch(42% 0.07 155);
+  --accent-ink:oklch(40% 0.065 155);
+  --accent-wash:oklch(48% 0.075 155 / 0.08);
+  --accent-line:oklch(48% 0.075 155 / 0.28);
+  --on-accent:#ffffff;
+
+  /* ── semantic · meaning only, always soft fill + hairline ── */
+  --coral:oklch(55% 0.16 28);   --coral-wash:oklch(55% 0.16 28 / 0.09);  --coral-line:oklch(55% 0.16 28 / 0.26);
+  --amber:oklch(60% 0.13 65);   --amber-wash:oklch(60% 0.13 65 / 0.11);  --amber-line:oklch(60% 0.13 65 / 0.28);
+  --green:oklch(52% 0.12 155);  --green-wash:oklch(52% 0.12 155 / 0.10); --green-line:oklch(52% 0.12 155 / 0.26);
+  --info:oklch(52% 0.09 240);   --info-wash:oklch(52% 0.09 240 / 0.10);  --info-line:oklch(52% 0.09 240 / 0.26);
+
+  /* ── elevation (layered, low-alpha, warm) ── */
+  --shadow-sm:0 1px 2px oklch(20% 0.02 95 / 0.05), 0 1px 1px oklch(20% 0.02 95 / 0.04);
+  --shadow-md:0 1px 2px oklch(20% 0.02 95 / 0.04), 0 4px 12px oklch(20% 0.02 95 / 0.05), 0 12px 28px oklch(20% 0.02 95 / 0.04);
+  --shadow-lg:0 2px 4px oklch(20% 0.02 95 / 0.05), 0 12px 32px oklch(20% 0.02 95 / 0.08), 0 24px 60px oklch(20% 0.02 95 / 0.07);
+  --hi:0 0 0 transparent; /* @kind shadow */
+  --scrim:oklch(20% 0.02 95 / 0.40);
+}
+
+html[data-theme="dark"],
+body[data-theme="dark"]{
+  color-scheme:dark;
+
+  --bg:#0b0b0a;
+  --panel:#151513;
+  --panel-2:#1b1b18;
+  --panel-3:#222220;
+  --inset:#111110;
+
+  --ink:#f0ede4;
+  --ink-2:#cfccc2;
+  --ink-3:#928f86;
+  --ink-4:#65635c;
+
+  --line:oklch(85% 0.01 90 / 0.10);
+  --line-2:oklch(85% 0.01 90 / 0.055);
+  --line-strong:oklch(85% 0.01 90 / 0.18);
+
+  /* accent lifts to a lighter, saturated evergreen on the near-black canvas */
+  --accent:oklch(66% 0.085 155);
+  --accent-2:oklch(72% 0.08 155);
+  --accent-ink:oklch(74% 0.075 155);
+  --accent-wash:oklch(66% 0.085 155 / 0.14);
+  --accent-line:oklch(66% 0.085 155 / 0.32);
+  --on-accent:#0a0a09;
+
+  --coral:oklch(70% 0.15 28);   --coral-wash:oklch(70% 0.15 28 / 0.13);  --coral-line:oklch(70% 0.15 28 / 0.30);
+  --amber:oklch(76% 0.13 70);   --amber-wash:oklch(76% 0.13 70 / 0.13);  --amber-line:oklch(76% 0.13 70 / 0.30);
+  --green:oklch(70% 0.13 155);  --green-wash:oklch(70% 0.13 155 / 0.13); --green-line:oklch(70% 0.13 155 / 0.30);
+  --info:oklch(72% 0.10 235);   --info-wash:oklch(72% 0.10 235 / 0.13);  --info-line:oklch(72% 0.10 235 / 0.28);
+
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow-md:0 1px 2px rgba(0,0,0,.4), 0 6px 16px rgba(0,0,0,.34), 0 14px 34px rgba(0,0,0,.28);
+  --shadow-lg:0 2px 6px rgba(0,0,0,.5), 0 16px 40px rgba(0,0,0,.46), 0 30px 70px rgba(0,0,0,.4);
+  --hi:inset 0 1px 0 oklch(85% 0.01 90 / 0.05); /* @kind shadow */
+  --scrim:rgba(0,0,0,.6);
+}

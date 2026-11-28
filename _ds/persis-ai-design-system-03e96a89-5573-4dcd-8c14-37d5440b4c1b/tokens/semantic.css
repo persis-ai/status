@@ -1,0 +1,66 @@
+/* Persis.ai · Semantic aliases
+   Human-readable names → raw ramp tokens. Both the v4 names (--panel/--ink/--accent-wash)
+   and the legacy v3 names (--surface/--text-1/--accent-soft) are exposed so any Persis
+   markup resolves. Late-bound var() ⇒ these follow the active theme automatically. */
+
+:root,
+html[data-theme="light"], body[data-theme="light"],
+html[data-theme="dark"],  body[data-theme="dark"]{
+  /* surfaces */
+  --surface:var(--panel);
+  --surface-2:var(--panel-2);
+  --surface-3:var(--panel-3);
+  --bg-page:var(--bg);
+  --bg-surface:var(--panel);
+  --bg-soft:var(--panel-2);
+  --bg-subtle:var(--panel-3);
+  --bg-elevated:var(--panel);
+
+  /* text */
+  --text-1:var(--ink);
+  --text-2:var(--ink-2);
+  --text-3:var(--ink-3);
+  --text-4:var(--ink-4);
+  --text-main:var(--ink);
+  --text-body:var(--ink-2);
+  --text-muted:var(--ink-3);
+  --text-faint:var(--ink-4);
+
+  /* borders */
+  --border:var(--line);
+  --border-subtle:var(--line-2);
+  --border-strong:var(--line-strong);
+
+  /* accent */
+  --accent-1:var(--accent);
+  --accent-3:var(--accent-2);
+  --accent-soft:var(--accent-wash);
+
+  /* semantic re-names by role */
+  --danger:var(--coral);   --danger-soft:var(--coral-wash);   --danger-line:var(--coral-line);
+  --urgent:var(--coral);   --urgent-soft:var(--coral-wash);
+  --warning:var(--amber);  --warning-soft:var(--amber-wash);  --warning-line:var(--amber-line);
+  --success:var(--green);  --success-soft:var(--green-wash);  --success-line:var(--green-line);
+  --money-in:var(--green); --money-out:var(--coral);
+
+  --coral-soft:var(--coral-wash);
+  --amber-soft:var(--amber-wash);
+  --green-soft:var(--green-wash);
+  --info-soft:var(--info-wash);
+
+  /* elevation */
+  --shadow:var(--shadow-md);
+  --shadow-xl:var(--shadow-lg);
+}
+
+/* Provenance / certainty — a first-class Persis concept.
+   Certainty degree (ΥΨΗΛΗ/ΜΕΣΗ/ΧΑΜΗΛΗ) maps to semantic hues where a source
+   marker exists; missing/low-confidence data is shown honestly, never invented. */
+:root,
+html[data-theme="light"], body[data-theme="light"],
+html[data-theme="dark"],  body[data-theme="dark"]{
+  --certainty-high:var(--green);   --certainty-high-wash:var(--green-wash);   --certainty-high-line:var(--green-line);
+  --certainty-mid:var(--amber);    --certainty-mid-wash:var(--amber-wash);    --certainty-mid-line:var(--amber-line);
+  --certainty-low:var(--coral);    --certainty-low-wash:var(--coral-wash);    --certainty-low-line:var(--coral-line);
+  --provenance:var(--info);        --provenance-wash:var(--info-wash);        --provenance-line:var(--info-line);
+}
